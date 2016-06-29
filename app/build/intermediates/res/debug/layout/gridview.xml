@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relaGrid"
+    android:layout_width="238dp"
+    android:layout_height="238dp"
+    android:orientation="vertical" 
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/chooseImage"
+        android:layout_width="238dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/app_name" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/chooseText"
+        android:layout_width="238dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/chooseImage"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        >
+    </TextView>
+
+</RelativeLayout><!-- From: file:/C:/Users/bchaudhr/AndroidStudioProjects/MisConductas/app/src/main/res/layout/gridview.xml -->

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contextscreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!--  <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" >
+    </View> --> 
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/top_orangebar"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+        
+      <ImageView
+	    android:contentDescription="@string/soundIcon"
+	    android:id="@+id/sound_Icon"
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:src="@drawable/soundicon"
+	    android:layout_alignParentRight="true"
+	    android:background="@drawable/top_orangebar"
+	    android:gravity="center_vertical|center_horizontal"
+	    android:layout_marginLeft="10dp"/>
+              	
+       <TextView
+        android:id="@+id/titleContextTextView"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_toLeftOf="@id/sound_Icon"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:layout_height="60dp"
+        />
+        
+    </RelativeLayout>   
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" >
+    </View> 
+    
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:horizontalSpacing="6dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="6dp" 
+         android:scrollbarFadeDuration="0"
+        />
+
+<!--     <LinearLayout -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="61dp" -->
+<!--         android:background="@drawable/bottom_bar" -->
+<!--         android:gravity="center_vertical|center_horizontal" -->
+<!--         android:orientation="horizontal" > -->
+
+<!--         <Button -->
+<!--             android:layout_width="120dp" -->
+<!--             android:layout_height="40dp" -->
+<!--             android:layout_gravity="center|center_vertical" -->
+<!--             android:background="@drawable/next_black"/> -->
+<!--     </LinearLayout> -->
+
+    <!--
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:orientation="horizontal" 
+        android:gravity="center_vertical|center_horizontal"
+        >
+        
+       <Button
+            android:layout_width="100dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center|center_vertical"
+            android:text="@string/next_btn"
+            android:onClick="nextButtonClick"
+       />
+
+    </LinearLayout>
+    -->
+    <!--
+         <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="4.0dip"
+        android:paddingTop="5.0dip"
+        android:paddingRight="4.0dip"
+        android:paddingBottom="1.0dip"
+        android:layout_width="fill_parent" android:layout_height="wrap_content">
+       
+        
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="0.0dip" android:layout_height="fill_parent"
+            android:text="@string/next_btn"
+            android:layout_weight="1.0"
+            android:onClick="nextButtonClick" />
+        </LinearLayout>
+    -->
+
+</LinearLayout>

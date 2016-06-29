@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"  
+    android:id="@+id/voice_recorder">  
+
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/topLayout"
+        android:layout_height="61dp"
+        android:background="@drawable/top_orangebar"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+       
+      	<ImageView
+		    android:contentDescription="@string/soundIcon"
+		    android:id="@+id/sound_Icon"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:src="@drawable/soundicon"
+		    android:layout_alignParentRight="true"
+		    android:background="@drawable/top_orangebar"
+		    android:gravity="center_vertical|center_horizontal"
+		    android:layout_marginLeft="15dp"/>
+      	        
+       <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"   
+        android:layout_toLeftOf="@id/sound_Icon"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="40dp"
+        />
+        
+    </RelativeLayout>   
+
+   	   <LinearLayout
+   	       android:id="@+id/bottomLayout"
+   	       android:layout_width="fill_parent"
+   	       android:layout_height="61dp"
+   	       android:layout_gravity="bottom"
+   	       android:background="@drawable/bottom_bar"
+   	       android:gravity="bottom|center_horizontal"
+   	       android:orientation="horizontal" 
+   	       android:layout_alignParentBottom="true">
+
+   	    <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center|center_vertical"
+            android:background="@drawable/check"
+             android:id="@+id/btnNext" 
+            android:onClick="nextButtonClick" />
+   	                
+<!--         <Button -->
+<!-- 			android:layout_width="100dip" -->
+<!--             android:layout_height="45dip" -->
+<!--             android:layout_gravity="center|center_vertical" -->
+<!--             android:background="@drawable/next_black" -->
+<!--             android:onClick="nextButtonClick"  -->
+<!--             android:id="@+id/btnNext" /> -->
+    </LinearLayout>
+     
+
+	<RelativeLayout android:id="@+id/middleLayout" android:orientation="vertical"
+		android:layout_width="match_parent" android:layout_height="wrap_content" 
+		android:layout_below="@id/topLayout" android:gravity="center" android:layout_marginTop="120dp"> 
+ 
+	    <RelativeLayout android:id="@+id/recordLayout" android:orientation="vertical"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:gravity="center"> 
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStart"
+                android:text="@string/start_label"
+                android:src="@drawable/record"/>
+                
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStop"
+                android:text="@string/stop_label"
+                android:src="@drawable/img_stop_spanish"/>
+        </RelativeLayout>
+        
+	    <RelativeLayout android:id="@+id/playLayout" android:orientation="vertical"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		                android:layout_toRightOf="@id/recordLayout">                 
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPlay"
+                android:text="@string/play_label"
+                android:src="@drawable/play"/>
+                
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPause"
+                android:text="@string/pause_label"
+                android:src="@drawable/pause"/>
+        </RelativeLayout>
+  </RelativeLayout>        
+  
+	    	<RelativeLayout android:id="@+id/middleLayout2" android:orientation="horizontal"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:layout_below="@id/middleLayout" android:gravity="center|center_horizontal" android:layout_marginTop="10dp"> 
+ 
+	    <RelativeLayout android:id="@+id/recordtextLayout" 
+		android:layout_width="wrap_content" android:layout_height="wrap_content" > 
+		
+	    <RelativeLayout android:id="@+id/startLabelLayout" 
+				android:layout_width="160dp" android:layout_height="wrap_content" android:gravity="center" >  
+		      	    <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:id="@+id/txtStart"
+                android:text="@string/start_label"  android:textSize="15sp"
+                android:layout_centerInParent="true" android:layout_marginLeft="15dp"/>
+         	<ImageView
+		    android:contentDescription="@string/soundIcon"
+		    android:id="@+id/soundStart"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:adjustViewBounds="true"
+		    android:src="@drawable/soundicon2"
+		    android:layout_alignRight="@id/txtStart"
+		    android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+        
+	    	    <RelativeLayout android:id="@+id/stopLabelLayout"  android:gravity="center"
+				android:layout_width="160dp" android:layout_height="wrap_content" >  
+		      	  <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtStop"  android:textSize="15sp"
+                android:text="@string/stop_label" android:layout_marginLeft="15dp"/>
+         	<ImageView
+		    android:contentDescription="@string/soundIcon"
+		    android:id="@+id/soundStop"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:adjustViewBounds="true"
+		    android:src="@drawable/soundicon2"
+		    android:layout_alignRight="@id/txtStop"
+		    android:layout_marginLeft="15dp"/>
+        </RelativeLayout>
+        </RelativeLayout>
+        
+	    <RelativeLayout android:id="@+id/playtextLayout" android:orientation="vertical"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		                android:layout_toRightOf="@id/recordtextLayout">                 
+        <RelativeLayout android:id="@+id/playLabelLayout" android:layout_width="180dp"
+            android:layout_height="wrap_content" android:gravity="left" android:layout_marginLeft="15dp">   
+		                <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPlay"
+                android:text="@string/play_label"  android:textSize="15sp"/>
+         	<ImageView
+		    android:contentDescription="@string/soundIcon"
+		    android:id="@+id/soundPlay"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:adjustViewBounds="true"
+		    android:src="@drawable/soundicon2"
+		    android:layout_alignRight="@id/txtPlay"
+		    android:layout_marginLeft="15dp" />
+        </RelativeLayout>
+        
+          <RelativeLayout android:id="@+id/pauseLabelLayout" android:layout_width="180dp" 
+              android:layout_height="wrap_content" android:gravity="left" android:layout_marginLeft="15dp" >   
+		      	<TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPause"
+                android:text="@string/pause_label"  android:textSize="15sp"/>
+         	<ImageView
+		    android:contentDescription="@string/soundIcon"
+		    android:id="@+id/soundPause"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+		    android:adjustViewBounds="true"
+		    android:src="@drawable/soundicon2"
+		    android:layout_alignRight="@id/txtPause"
+		    android:layout_marginLeft="15dp" />
+        </RelativeLayout>
+        </RelativeLayout>
+  </RelativeLayout>
+    
+</RelativeLayout><!-- From: file:/C:/Users/bchaudhr/AndroidStudioProjects/MisConductas/app/src/main/res/layout/activity_voicerecord.xml -->

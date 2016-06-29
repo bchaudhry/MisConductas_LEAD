@@ -1,0 +1,5 @@
+C:\Users\bchaudhr\AndroidStudioProjects\MisConductas\app\build\intermediates\classes\debug
+C:\Users\bchaudhr\AndroidStudioProjects\MisConductas\app\build\intermediates\pre-dexed\debug\com.antlersoft.android.db_0.1.6-d9d37400a02476a2fbc9bc95ef21dcd0491a0999.jar
+C:\Users\bchaudhr\AndroidStudioProjects\MisConductas\app\build\intermediates\pre-dexed\debug\sqlitegen_eclipse_site_0.1.18-516c83b29ab1feedabb19335b10f7f21cbc750ec.jar
+C:\Users\bchaudhr\AndroidStudioProjects\MisConductas\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-92efaf0dc09c20f6736e9dd8e86ba1a3e4a07c48.jar
+C:\Users\bchaudhr\AndroidStudioProjects\MisConductas\app\build\intermediates\pre-dexed\debug\google-play-services-e65a4a118dc636d131964f191b44949caa6ff696.jar

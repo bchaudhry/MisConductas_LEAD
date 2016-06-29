@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/behaviorscreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >  
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:background="@drawable/top_orangebar"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+        
+       <TextView
+	        android:id="@+id/titleBehaviorTextView"
+	        android:layout_width="wrap_content"
+	        android:textColor="@android:color/white"
+	        android:textSize="15sp"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:layout_height="30dp"/>
+       
+      	<ImageView
+		    android:contentDescription="@string/soundIcon"
+		    android:id="@+id/sound_Icon"
+		    android:layout_width="40dp"
+		    android:layout_height="40dp"
+		    android:src="@drawable/soundicon"
+		    android:layout_toRightOf="@id/titleBehaviorTextView"
+		    android:background="@drawable/top_orangebar"
+		    android:gravity="center_vertical|center_horizontal"
+		    android:layout_marginLeft="10dp"/>
+        
+    </RelativeLayout>    
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp" >
+    </View> 
+    
+    <GridView
+        android:id="@+id/gridviewBehavior"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:horizontalSpacing="6dp" android:background="@android:color/white"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="6dp" 
+         android:scrollbarFadeDuration="0"
+         android:clickable="true"
+		 android:descendantFocusability="beforeDescendants"
+        />
+    
+</LinearLayout>

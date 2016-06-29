@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sqlitegen_eclipse_site_0.1.18">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/sqlitegen_eclipse_site_0.1.18.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
