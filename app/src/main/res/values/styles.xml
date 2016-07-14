@@ -1,7 +1,0 @@
-<resources>
-
-    <style name="AppTheme" parent="android:Theme.Light" />
-<style name="FullHeightDialog" parent="android:style/Theme.Dialog">
-   <item name="android:windowNoTitle">true</item>
-</style>
-</resources>
